@@ -1,6 +1,5 @@
 FROM python:3.11-slim
 
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ghostscript \
     libgl1 \
@@ -15,10 +14,11 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 COPY . .
 
-
-EXPOSE 8501
+EXPOSE 7860
 
 CMD ["streamlit", "run", "app.py", \
-     "--server.port=8501", \
+     "--server.port=7860", \
      "--server.address=0.0.0.0", \
-     "--server.headless=true"]
+     "--server.headless=true", \
+     "--server.enableXsrfProtection=false", \
+     "--server.enableCORS=false"]
