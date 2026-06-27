@@ -1,0 +1,12 @@
+CHROMA_COLLECTION_NAME = "shikkha_bondhu_rag"
+
+EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+
+CHUNK_SIZE = 700
+CHUNK_OVERLAP = 200
+
+GENERATION_MODEL_NAME = "meta-llama/Llama-3.3-70B-Instruct"
+
+GENERATION_TOP_K = 10
+
+MAX_CONTEXT_CHARS_PER_CHUNK = 800
