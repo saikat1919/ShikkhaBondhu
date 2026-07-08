@@ -1,2 +1,2 @@
 ghostscript
-python3-tk
+default-jre

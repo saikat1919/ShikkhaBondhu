@@ -1,7 +1,19 @@
 from dotenv import load_dotenv
 load_dotenv()
 
+import os
 import streamlit as st
+
+if "GROQ_API_KEY" in st.secrets:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+
+if "HF_TOKEN" in st.secrets:
+    os.environ["HF_TOKEN"] = st.secrets["HF_TOKEN"]
+
+if "GEMINI_API_KEY" in st.secrets:
+    os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+
+
 from langchain_core.messages import HumanMessage, AIMessage
 
 from session_ingestion.session_ingestion import process_uploaded_pdfs
