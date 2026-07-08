@@ -13,9 +13,10 @@ session ends.
 ## Setup (local development)
 1. Create a python virtual environment
 2. Activate the virtual environment
-3. Install the required packages by `pip install -r requirements.txt`
-4. Copy `.env.example` to `.env` and fill in your actual API keys
-5. Run the command `streamlit run app.py`
+3. Clone the repo using `git clone https://github.com/saikat1919/ShikkhaBondhu.git`
+4. Install the required packages by `pip install -r requirements.txt`
+5. Copy `.env.example` to `.env` and fill in your actual API keys
+6. Run the command `streamlit run app.py`
 
 ## Required environment variables
 
