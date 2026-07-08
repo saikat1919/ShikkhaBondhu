@@ -26,3 +26,7 @@ See `.env.example` and replace it with .env where you'll need:
 
 ## 🌐 Live Demo
 👉 https://shikkhabondhu-for-students.streamlit.app/
+
+## 📄 Sample Test PDFs
+For judges: sample documents used for testing → https://drive.google.com/drive/folders/1LUrVNoN2Gz-Rl7v3vGEBA9yj2qCPiKW1?usp=sharing
+
