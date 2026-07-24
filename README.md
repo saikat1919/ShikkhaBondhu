@@ -36,16 +36,6 @@ Put these in `.env` (see `.env.example`):
 | `GROQ_API_KEY` | https://console.groq.com/keys |
 | `HF_TOKEN` | A READ-scope token from your Hugging Face account settings |
 
-That is all the setup needed — no `secrets.toml`, no Docker. On Streamlit Cloud
+That is all the setup needed: no `secrets.toml`, no Docker. On Streamlit Cloud
 the same two keys go in the app's **Secrets** panel instead; the app reads from
 either source.
-
-### Optional: table extraction
-
-Camelot needs [Ghostscript](https://www.ghostscript.com/releases/gsdnld.html)
-installed on the system to pull tables out of PDFs. Without it the app still
-runs and answers normally — it just logs `table extraction skipped` and indexes
-text only. Install it if your PDFs are table-heavy.
-
-On Debian/Ubuntu: `sudo apt install ghostscript`. On macOS: `brew install ghostscript`.
-Streamlit Cloud installs it automatically from `packages.txt`.
